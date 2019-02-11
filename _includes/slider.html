@@ -1,0 +1,17 @@
+<div class="my-slider">
+    {% assign filter =  'img/' | append: include.path %}
+
+    {% for image in site.static_files %}
+    {% if image.path contains filter %}
+    {% unless image.path contains '_tn' %}
+
+    <div style="height: 250px">
+        <a href="{{ image.path }}" class="swipebox" title="{{ site.data.description[include.path][image.name] }}">
+            {% assign tn =  image.basename | append: "_tn" | append: image.extname %}
+            <img class="img-responsive slider-image" src="{{ image.path | replace: image.name, tn }}" alt="{{ site.data.description[include.path'][image.name] }}">
+        </a>
+    </div>
+    {% endunless %}
+    {% endif %}
+    {% endfor %}
+</div>
