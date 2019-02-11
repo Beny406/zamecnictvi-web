@@ -17,8 +17,8 @@ title: Zámečnictví a kovovýroba Svitavy - Beneš a syn
 email: zamecnictvi.benes@email.cz
 description: >- # this means to ignore newlines until "baseurl:"
   Jsme rodinná firma působící na trhu již od roku 1992. Předmětem naší činnosti je kovovýroba a zámečnictví ve Svitavách a okolí.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.zamecnictvi-svitavy.cz/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/zamecncitvi-web" # the subpath of your site, e.g. /blog
+url: "https://beny406.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
