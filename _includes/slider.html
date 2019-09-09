@@ -8,7 +8,7 @@
     <div style="height: 250px">
         <a href="{{ image.path | relative_url}}" class="swipebox" title="{{ site.data.description[include.path][image.name] }}">
             {% assign tn =  image.basename | append: "_tn" | append: image.extname %}
-            <img class="img-responsive slider-image" src="{{ image.path | replace: image.name, tn | relative_url}}" alt="{{ site.data.description[include.path'][image.name] }}">
+            <img class="img-responsive slider-image" src="{{ image.path | replace: image.name, tn | relative_url}}" alt="{{ site.data.description[include.path][image.name] }}">
         </a>
     </div>
     {% endunless %}
